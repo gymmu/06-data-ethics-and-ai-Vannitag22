@@ -6,6 +6,9 @@
 \usepackage{hyperref}
 \usepackage{csquotes}
 \usepackage[a4paper]{geometry}
+\usepackage{graphicx} %Um externe Bilddateien einfügen zu können.
+\usepackage{float}
+\usepackage{caption}
 
 \usepackage[
     backend=biber,
@@ -24,10 +27,9 @@
 \addbibresource{../references/bibliography.bib}
 
 
-\title{Ethik im Umgang mit Daten}
-\author{Name des Autors}
+\title{Künstliche Intelligenz und Ethik im Datenumgang}
+\author{Vanessa Tagliente}
 \date{\today}
-
 
 \begin{document}
 
@@ -41,9 +43,20 @@
 
 \chapter{Einleitung}
 
-Hier kommt die Einführung. Der Text hier sollte eigentlich noch viel länger sein, so das hier nicht so merkwürdige Umbrüche entstehen.
+In diesem Projekt befassen wir uns mit der Künstlichen Intelligenz (Kurz KI).
+Folgende Fragen werdem in diesem Dokument Fragen beantwortet: Was ist KI; Wie wird sie trainiert; Was sind die Vor- und Nachteile, Wie funktioniert die KI.
 
-Ich kann weitere Kapitel auch importieren.
+\bigskip
+Künstliche Intelligenz ist ein Teilgebiet der Informatik und beschäftigt sich mit maschinellem Lernen \citep{ai-wikipedia}.
+Wie die meisten vermutlich wissen, kann man einer Künstlichen Inteligenz wie ChatGBT alles fragen und diese gibt dann Antworten, ganze Dokumente oder Zusammenfassungen. Sie kann sogar Bilder generieren.
+Dies ist aber nur ein Beispiel der KI. Es gibt noch viele andere Arten, wie man KI einsetzen kann. Sie kann zum Beispiel in der Forschung, aber auch im Krieg eingestetzt werden. In Computer- und Gesellschaftsspielen, kann man gegen eine KI spielen, und je nach dem nicht merken, dass es sich nicht um eine reale Person handelt.\\
+In diesem Dokument befassen wir uns aber nur mit der KI wie ChatGBT oder GoogleAssistant.
+
+\input{chap_training.tex}
+
+\input{chap_daten.tex}
+
+\input{chap_fazit.tex}
 
 \input{chap_methode.tex}
 
